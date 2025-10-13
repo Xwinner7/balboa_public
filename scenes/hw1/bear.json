@@ -1,0 +1,247 @@
+{
+    "resolution": [800, 450],
+    "background": [
+        0.2, 0.1, 0.4
+    ],
+    "objects": [
+        {
+            "type": "circle",
+            "center": [400, 300],
+            "radius": 300,
+            "fill_color": [0.4, 0.3, 0.7],
+            "fill_alpha": 0.6
+        },
+        {
+            "type": "circle",
+            "center": [650, 100],
+            "radius": 60,
+            "fill_color": [0.9, 0.9, 0.7],
+            "fill_alpha": 0.8
+        },
+        {
+            "type": "circle",
+            "center": [640, 90],
+            "radius": 50,
+            "fill_color": [0.2, 0.1, 0.4],
+            "fill_alpha": 0.9
+        },
+        {
+            "type": "circle",
+            "center": [300, 350],
+            "radius": 50,
+            "fill_color": [0.6, 0.4, 0.2]
+        },
+        {
+            "type": "circle",
+            "center": [500, 350],
+            "radius": 50,
+            "fill_color": [0.6, 0.4, 0.2]
+        },
+        {
+            "type": "circle",
+            "center": [300, 350],
+            "radius": 30,
+            "fill_color": [0.5, 0.3, 0.1]
+        },
+        {
+            "type": "circle",
+            "center": [500, 350],
+            "radius": 30,
+            "fill_color": [0.5, 0.3, 0.1]
+        },
+        {
+            "type": "circle",
+            "center": [400, 225],
+            "radius": 160,
+            "fill_color": [0.6, 0.4, 0.2],
+            "stroke_color": [0.4, 0.3, 0.2],
+            "stroke_width": 3
+        },
+        {
+            "type": "circle",
+            "center": [485, 275],
+            "radius": 40,
+            "fill_color": [1, 1, 1]
+        },
+        {
+            "type": "circle",
+            "center": [315, 275],
+            "radius": 40,
+            "fill_color": [1, 1, 1]
+        },
+        {
+            "type": "circle",
+            "center": [485, 275],
+            "radius": 15,
+            "fill_color": [0.1, 0.1, 0.1]
+        },
+        {
+            "type": "circle",
+            "center": [315, 275],
+            "radius": 15,
+            "fill_color": [0.1, 0.1, 0.1]
+        },
+        {
+            "type": "circle",
+            "center": [400, 175],
+            "radius": 25,
+            "fill_color": [0.3, 0.2, 0.1]
+        },
+        {
+            "type": "polyline",
+            "points": [380, 150, 400, 130, 420, 150],
+            "stroke_color": [0.3, 0.2, 0.1],
+            "stroke_width": 4
+        },
+        {
+            "type": "circle",
+            "center": [370, 200],
+            "radius": 10,
+            "fill_color": [0.9, 0.7, 0.8]
+        },
+        {
+            "type": "circle",
+            "center": [430, 200],
+            "radius": 10,
+            "fill_color": [0.9, 0.7, 0.8]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [1.0, 0.9, 0.3],
+            "is_closed": true,
+            "transform": [
+                {"scale": [1.2, 1.2]},
+                {"translate": [150, 100]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [1.0, 0.7, 0.2],
+            "is_closed": true,
+            "transform": [
+                {"scale": [0.8, 0.8]},
+                {"translate": [650, 70]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [1.0, 0.9, 0.3],
+            "is_closed": true,
+            "transform": [
+                {"scale": [1.5, 1.5]},
+                {"translate": [200, 350]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [0.8, 1.0, 0.3],
+            "is_closed": true,
+            "transform": [
+                {"scale": [1.0, 1.0]},
+                {"translate": [600, 400]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [1.0, 0.9, 0.3],
+            "is_closed": true,
+            "transform": [
+                {"scale": [0.9, 0.9]},
+                {"translate": [100, 250]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [1.0, 0.6, 0.8],
+            "is_closed": true,
+            "transform": [
+                {"scale": [1.1, 1.1]},
+                {"translate": [700, 300]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [0.7, 0.9, 1.0],
+            "is_closed": true,
+            "transform": [
+                {"scale": [0.7, 0.7]},
+                {"translate": [50, 150]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [1.0, 0.9, 0.3],
+            "is_closed": true,
+            "transform": [
+                {"scale": [1.3, 1.3]},
+                {"translate": [750, 200]}
+            ]
+        },
+        {
+            "type": "polyline",
+            "points": [0,0, 10,20, 20,0, 0,10, 20,10],
+            "fill_color": [1.0, 0.8, 0.5],
+            "is_closed": true,
+            "transform": [
+                {"scale": [0.6, 0.6]},
+                {"translate": [180, 400]}
+            ]
+        },
+        {
+            "type": "circle",
+            "center": [200, 120],
+            "radius": 3,
+            "fill_color": [1.0, 1.0, 1.0]
+        },
+        {
+            "type": "circle",
+            "center": [600, 180],
+            "radius": 2,
+            "fill_color": [1.0, 1.0, 1.0]
+        },
+        {
+            "type": "circle",
+            "center": [100, 300],
+            "radius": 4,
+            "fill_color": [1.0, 1.0, 1.0]
+        },
+        {
+            "type": "circle",
+            "center": [700, 80],
+            "radius": 3,
+            "fill_color": [1.0, 1.0, 1.0]
+        },
+        {
+            "type": "circle",
+            "center": [300, 80],
+            "radius": 2,
+            "fill_color": [1.0, 1.0, 1.0]
+        },
+        {
+            "type": "circle",
+            "center": [500, 120],
+            "radius": 3,
+            "fill_color": [1.0, 1.0, 1.0]
+        },
+        {
+            "type": "circle",
+            "center": [150, 180],
+            "radius": 2,
+            "fill_color": [1.0, 1.0, 1.0]
+        },
+        {
+            "type": "circle",
+            "center": [650, 320],
+            "radius": 4,
+            "fill_color": [1.0, 1.0, 1.0]
+        }
+    ]
+}

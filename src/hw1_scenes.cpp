@@ -25,24 +25,47 @@ Matrix3x3 parse_transformation(const json &node) {
             };
             // TODO (HW1.4): construct a scale matrix and composite with F
             UNUSED(scale); // silence warning, feel free to remove it
+            Matrix3x3 scale_mat = Matrix3x3::identity();
+            scale_mat(0, 0) = scale.x;
+            scale_mat(1, 1) = scale.y;
+            F = scale_mat * F;
         } else if (auto rotate_it = it->find("rotate"); rotate_it != it->end()) {
             Real angle = *rotate_it;
             // TODO (HW1.4): construct a rotation matrix and composite with F
             UNUSED(angle); // silence warning, feel free to remove it
+            Real angle_rad = angle * (M_PI / 180.0);
+            Real cos_a = std::cos(angle_rad);
+            Real sin_a = std::sin(angle_rad);
+            Matrix3x3 rotate_mat = Matrix3x3::identity();
+            rotate_mat(0, 0) = cos_a;
+            rotate_mat(0, 1) = -sin_a;
+            rotate_mat(1, 0) = sin_a;
+            rotate_mat(1, 1) = cos_a;
+            F = rotate_mat * F;
         } else if (auto translate_it = it->find("translate"); translate_it != it->end()) {
             Vector2 translate = Vector2{
                 (*translate_it)[0], (*translate_it)[1]
             };
             // TODO (HW1.4): construct a translation matrix and composite with F
             UNUSED(translate); // silence warning, feel free to remove it
+            Matrix3x3 translate_mat = Matrix3x3::identity();
+            translate_mat(0, 2) = translate.x;
+            translate_mat(1, 2) = translate.y;
+            F = translate_mat * F;
         } else if (auto shearx_it = it->find("shear_x"); shearx_it != it->end()) {
-            Real shear_x = *shearx_it;
+            Real shear_val = *shearx_it;
             // TODO (HW1.4): construct a shear matrix (x direction) and composite with F
-            UNUSED(shear_x); // silence warning, feel free to remove it
+            UNUSED(shear_val); // silence warning, feel free to remove it
+            Matrix3x3 shear_mat = Matrix3x3::identity();
+            shear_mat(0, 1) = shear_val;
+            F = shear_mat * F;
         } else if (auto sheary_it = it->find("shear_y"); sheary_it != it->end()) {
-            Real shear_y = *sheary_it;
+            Real shear_val = *sheary_it;
             // TODO (HW1.4): construct a shear matrix (y direction) and composite with F
-            UNUSED(shear_y); // silence warning, feel free to remove it
+            UNUSED(shear_val); // silence warning, feel free to remove it
+            Matrix3x3 shear_mat = Matrix3x3::identity();
+            shear_mat(1, 0) = shear_val;
+            F = shear_mat * F;
         }
     }
     return F;
