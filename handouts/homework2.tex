@@ -229,9 +229,9 @@ Having the barycentric coordinates, we can finally get the desired depth:
 
 To summarize, given an image plane point (e.g., pixel or subpixel center) and a triangle, we do the following:
 \begin{enumerate}
-    \item We first project triangle vertices to screen space, using the inverse of \cref{eq:camera_to_screen}, recall \cref{fig:camera_vs_screen}.
+    \item We first project triangle vertices to screen space, recall \cref{fig:camera_vs_screen}.
     \item If the image plane point is inside the triangle, we do the following:
-    \item We convert the current image plane point from screen space to the projected camera space.
+    \item We convert the current image plane point from screen space to the projected camera space (using the inverse of \cref{eq:camera_to_screen}).
     \item We compute the projected barycentric coordinates $b_0'$, $b_1'$, and $b_2'$ using \cref{eq:barycentric_solve}.
     \item Using the projected barycentric coordinates and the depth at the three vertices, we convert them to the original barycentric coordinates using \cref{eq:inverse_depth_weighting}.
     \item Finally, we obtain the depth using \cref{eq:interpolated_depth} and use the depth to pick the triangle that is the closest to the pixel sample, but in front of the clipping plane.
